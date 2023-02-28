@@ -1,0 +1,325 @@
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>fodina-2019-06-17</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>uitopia-6.5</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>lpsolve55j</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>log-util-1.0.20180622</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>jmathplot</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>javailp-1.2a</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>ProM-Framework-6.8.60</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>ProM-Contexts-6.8.34</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>jgoodies-forms-1.4.1</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>ETConformance</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>ProcessTree</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>eclipse-collections-9.2.0</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>Widgets</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>guava-20.0</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>jgraph</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>conversion-1.0.20180622</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>weka</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>tablelayout</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>LogAbstractions</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>AcceptingPetriNet</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>LogToDAFSA</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>commons-collections-3.0</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>Properties</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>prefuse-core-1.0.0</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>javacsv-2.1</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>TransitionSystems</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>ujmp-complete-0.2.5</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>PetriNets</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>BasicUtils</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>commons-cli-1.4</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>CNet</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>slickerbox-1.0rc1</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>trove-3.1a1</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>eclipse-collections-api-8.0.0</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>ProM-Models-6.7.20</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>Murata</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>commons-io-2.6</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>InductiveMinerDeprecated</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>jgrapht-jdk1.6</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>PNAnalysis</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>kxml2-2.2.3</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>ApacheUtils</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>InductiveMiner</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>json-20090211</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>jgoodies-common-1.2.0</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>GraphViz</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>jdom-2.0.6</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>ProjectedRecallAndPrecision</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>jbpt-0.2.429</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>bpstruct-osgi-1.1</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>commons-lang-2.6</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>stagemining-logic-1.1</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>kxml2-2.3.0</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>commons-lang3-3.7</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>Log</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>OpenXES-20181205</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>Sat4j</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>PNetReplayer</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>fodina-libs-2019-06-17</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>univocity-parsers-1.5.5</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>ProM-Plugins</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>OpenXES-XStream-20160212</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>bpstruct-0.1.117</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>fake-context-1.0</artifactId>
+  <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>local</groupId>
+  <artifactId>BPMN</artifactId>
+  <version>1.0</version>
+</dependency>
