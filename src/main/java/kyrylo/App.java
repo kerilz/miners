@@ -14,7 +14,7 @@ public class App {
 
     public static void main(String[] args) throws Exception {
         SpringApplicationBuilder builder = new SpringApplicationBuilder(App.class);
-        XesEventIngester.ingestLog("/Users/kyrylo/Downloads/data/activitylog_uci_detailed_weekends.xes");
+        XesEventIngester.ingestLog("/Users/kyrylo/Downloads/12707639/sepsis.xes");
         builder.headless(false);
 
         ConfigurableApplicationContext context = builder.run(args);

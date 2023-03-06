@@ -26,8 +26,8 @@ public class CloudEventToXesMapper {
     public static XLog createLogFromEvents(List<EventDto> pageOfEvents) {
         final XLog log = createEmptyLog();
 
-        final Map<String, List<EventDto>> map = pageOfEvents.stream().collect(Collectors.groupingBy(EventDto::getTraceId));
-        map.forEach((traceId, events) -> {
+        final Map<String, List<EventDto>> traceIdToTrace = pageOfEvents.stream().collect(Collectors.groupingBy(EventDto::getTraceId));
+        traceIdToTrace.forEach((traceId, events) -> {
             XTrace trace = createTrace(traceId);
 
             events.forEach(e -> trace.add(mapToXEvent(e)));
@@ -48,6 +48,9 @@ public class CloudEventToXesMapper {
 
     public static XEvent mapToXEvent(EventDto e) {
         String eventName = e.getEventName();
+        if (eventName.contains("$")) {
+            eventName = eventName.split("\\$")[0];
+        }
         Object data = e.getData();
         String group = e.getGroup();
         String id = e.getId();

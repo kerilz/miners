@@ -5,173 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b922c002-b4f6-4c74-8c6d-23d3c3ed3116" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/diagramUtil/layoutFixer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kyrylo/XesEventIngester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/AcceptingPetriNet.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ApacheUtils.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/BPMN.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/BasicUtils.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/CNet.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ETConformance.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/GraphViz.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/InductiveMiner.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/InductiveMinerDeprecated.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Log.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/LogAbstractions.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/LogToDAFSA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Murata.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/OpenXES-20181205.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/OpenXES-XStream-20160212.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/PNAnalysis.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/PNetReplayer.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/PetriNets.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ProM-Contexts-6.8.34.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ProM-Framework-6.8.60.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ProM-Models-6.7.20.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ProM-Plugins.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ProcessTree.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ProjectedRecallAndPrecision.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Properties.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Sat4j.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/TransitionSystems.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Widgets.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/bpstruct-0.1.117.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/bpstruct-osgi-1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-cli-1.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-collections-3.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-io-2.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-lang-2.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-lang3-3.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/conversion-1.0.20180622.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/eclipse-collections-9.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/eclipse-collections-api-8.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/fake-context-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/fodina-2019-06-17.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/fodina-libs-2019-06-17.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/guava-20.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javacsv-2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javailp-1.2a.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jbpt-0.2.429.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jdom-2.0.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jgoodies-common-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jgoodies-forms-1.4.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jgraph.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jgrapht-jdk1.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jmathplot.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/json-20090211.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/kxml2-2.2.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/kxml2-2.3.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/log-util-1.0.20180622.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/lpsolve55j.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/prefuse-core-1.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/slickerbox-1.0rc1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/stagemining-logic-1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/tablelayout.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/trove-3.1a1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/uitopia-6.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ujmp-complete-0.2.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/univocity-parsers-1.5.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/weka.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/bpmn/helper/DiagramHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/bpmn/helper/GatewayMap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/bpmn/helper/Petrinet2BPMNConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/bpmn/io/BPMNDiagramExporter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/bpmn/io/BPMNDiagramImporter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/bpmn/io/impl/BPMNDiagramExporterImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/bpmn/io/impl/BPMNDiagramImporterImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/bpmn/metrics/ComplexityCalculator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/bpmn/structuring/StructuringService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/bpmn/structuring/core/Structurer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/bpmn/structuring/core/StructuringCore.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/bpmn/structuring/core/StructuringState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/bpmn/structuring/graph/Graph.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/bpmn/structuring/graph/Move.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/bpmn/structuring/graph/Path.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/bpmn/structuring/iBPStruct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/bpmn/structuring/ui/iBPStructSettings.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/bpmn/structuring/ui/iBPStructUI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/bpmn/structuring/ui/iBPStructUIResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/bpmn/structuring/wrapper/BPStructWrapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/processmining/log/ComplexLog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/processmining/log/LogParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/processmining/log/SimpleLog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/processmining/log/graph/LogEdge.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/processmining/log/graph/LogNode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/processmining/miners/omega/OmegaMiner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/processmining/miners/splitminer/SplitMiner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/processmining/miners/splitminer/dfgp/DFGEdge.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/processmining/miners/splitminer/dfgp/DFGNode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/processmining/miners/splitminer/dfgp/DirectlyFollowGraphPlus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/processmining/miners/splitminer/oracle/Oracle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/processmining/miners/splitminer/oracle/OracleItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/processmining/miners/splitminer/ui/dfgp/DFGPSettings.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/processmining/miners/splitminer/ui/dfgp/DFGPUI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/processmining/miners/splitminer/ui/dfgp/DFGPUIResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/processmining/miners/splitminer/ui/miner/SplitMinerSettings.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/processmining/miners/splitminer/ui/miner/SplitMinerUI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/processmining/miners/splitminer/ui/miner/SplitMinerUIResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/promplugins/DFGPPlugin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/promplugins/GatewayMapPlugin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/promplugins/ReplaceIORsPlugin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/promplugins/SplitMinerPlugin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/qut/promplugins/StructureDiagramPlugin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/accuracy/MarkovianAccuracyCalculator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/accuracy/abstraction/Abstraction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/accuracy/abstraction/Edge.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/accuracy/abstraction/LogAbstraction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/accuracy/abstraction/Node.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/accuracy/abstraction/ProcessAbstraction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/accuracy/abstraction/distances/ConfusionMatrix.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/accuracy/abstraction/distances/GraphEditDistance.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/accuracy/abstraction/distances/HungarianAlgorithm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/accuracy/abstraction/distances/Levenshtein.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/accuracy/abstraction/intermediate/AAEdge.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/accuracy/abstraction/intermediate/AANode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/accuracy/abstraction/intermediate/AutomatonAbstraction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/accuracy/abstraction/markovian/MarkovAbstraction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/accuracy/abstraction/markovian/MarkovLabel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/accuracy/abstraction/set/SetAbstraction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/accuracy/abstraction/set/SetLabel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/accuracy/abstraction/subtrace/Subtrace.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/accuracy/abstraction/subtrace/SubtraceAbstraction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/compliance/TimeConstraintsChecker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/decomposition/Decomposer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/optimization/AlignmentBasedEvaluator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/optimization/AsyncFodina.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/optimization/AutomatedProcessDiscoveryOptimizer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/optimization/FodinaHPO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/optimization/IMdProxy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/optimization/InductiveHPO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/optimization/IteratedLocalSearch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/optimization/MarkovianBasedEvaluator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/optimization/Metaheuristics.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/optimization/MinerProxy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/optimization/RepeatedLocalSearch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/optimization/SimpleDirectlyFollowGraph.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/optimization/SimulatedAnnealing.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/optimization/SplitMinerHPO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/processmining/optimization/TabuSearch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/services/ServiceProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/au/edu/unimelb/services/Testing.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/drscc/automaton/Automaton.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/drscc/automaton/State.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/drscc/automaton/TarjanSCC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/drscc/automaton/Transition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/drscc/importer/ImportEventLog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/drscc/importer/ImportProcessModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/normalisiert/utils/graphs/AdjacencyList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/normalisiert/utils/graphs/ElementaryCyclesSearch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/normalisiert/utils/graphs/SCCResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/normalisiert/utils/graphs/StrongConnectedComponents.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/normalisiert/utils/graphs/TestCycles.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/normalisiert/utils/graphs/license.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/processmining/fodina/Fodina.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/processmining/fodina/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/processmining/plugins/bpmnminer/types/MinerSettings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kyrylo/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kyrylo/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kyrylo/CloudEventToXesMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kyrylo/CloudEventToXesMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kyrylo/XesEventIngester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kyrylo/XesEventIngester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kyrylo/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kyrylo/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kyrylo/CloudEventToXesMapper$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kyrylo/CloudEventToXesMapper$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kyrylo/CloudEventToXesMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kyrylo/CloudEventToXesMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kyrylo/XesEventIngester.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kyrylo/XesEventIngester.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +95,7 @@
       <updated>1676894530058</updated>
       <workItem from="1676894531287" duration="898000" />
       <workItem from="1676899885855" duration="15938000" />
-      <workItem from="1677600534497" duration="384000" />
+      <workItem from="1677600534497" duration="12147000" />
     </task>
     <servers />
   </component>

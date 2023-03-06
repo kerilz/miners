@@ -5,7 +5,6 @@ import kong.unirest.HttpResponse;
 import kong.unirest.JsonNode;
 import kong.unirest.Unirest;
 import org.camunda.discovery.EventDto;
-import org.deckfour.xes.factory.XFactoryNaiveImpl;
 import org.deckfour.xes.model.XAttributeLiteral;
 import org.deckfour.xes.model.XAttributeTimestamp;
 import org.deckfour.xes.model.XEvent;
@@ -13,15 +12,17 @@ import org.deckfour.xes.model.XLog;
 import org.deckfour.xes.model.XTrace;
 import org.xeslite.lite.factory.XFactoryLiteImpl;
 
+import java.text.SimpleDateFormat;
+import java.time.Instant;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Objects;
+import java.util.TimeZone;
 import java.util.UUID;
-
-import static org.camunda.discovery.util.LogUtil.readSingleLog;
+import java.util.stream.Collectors;
 
 public class XesEventIngester {
     public static void ingestLog(String path) throws Exception {
@@ -44,16 +45,16 @@ public class XesEventIngester {
                 events.add(xEventToEventDto(e, key, logName));
 //            }
         }));
-        ingestEvents(events);
+        ingestEventsInChunks(events);
     }
 
     public static org.camunda.discovery.EventDto xEventToEventDto(XEvent event, String traceId, String logName) {
         org.camunda.discovery.EventDto eventDto = new org.camunda.discovery.EventDto();
         eventDto.setEventName(getStringAttributeValue(event, "concept:name") + getLifecycleAttribute(event));
         eventDto.setTimestamp(((XAttributeTimestamp)event.getAttributes().get("time:timestamp")).getValueMillis());
-        eventDto.setSource("external");
+        eventDto.setSource(logName);
         eventDto.setId(UUID.randomUUID().toString());
-        eventDto.setGroup(logName);
+        eventDto.setGroup("external");
         eventDto.setIngestionTimestamp(new Date().getTime());
         eventDto.setTraceId(traceId);
         return eventDto;
@@ -62,9 +63,9 @@ public class XesEventIngester {
     private static String getLifecycleAttribute(XEvent event) {
         String lifecycleStateValue = ((XAttributeLiteral) event.getAttributes().get("lifecycle:transition")).getValue();
         switch (lifecycleStateValue) {
-            case "start": lifecycleStateValue = "_start";
+            case "start": lifecycleStateValue = "$start";
                 break;
-            case "complete": lifecycleStateValue = "_end";
+            case "complete": lifecycleStateValue = "$end";
                 break;
             default: break;
         };
@@ -76,12 +77,91 @@ public class XesEventIngester {
     }
 
     public static void ingestEvents(List<EventDto> events) {
+//        final List<CloudEventRequestDto> collect = events.stream()
+//          .map(CloudEventRequestDto::map)
+//          .collect(Collectors.toList());
         HttpResponse<JsonNode> response = Unirest.post("http://localhost:8090/api/ingestion/event/batch/mapped")
                 .header("accept", "application/json")
                 .header("Content-Type", "application/json")
                 .header("Authorization", "Bearer SASAT")
                 .body(events).asJson();
-        System.out.println(response.getBody().toString());
+        System.out.println(response.getStatus());
+    }
 
+    public static void ingestEventsInChunks(List<EventDto> events) {
+        int chunkSize = 500;
+        List<EventDto> chunk = new ArrayList<>();
+        for (int i = 0; i < events.size(); i++) {
+            chunk.add(events.get(i));
+            if (chunk.size() == chunkSize || i == events.size() - 1) {
+                ingestEvents(chunk);
+                chunk.clear();
+            }
+        }
+    }
+
+    public static class CloudEventRequestDto {
+        private String id;
+        private String source;
+        private String specversion;
+        private String type;
+        private String time;
+        private Object data;
+        private String traceid;
+        private String group;
+
+        public CloudEventRequestDto() {
+        }
+
+        public void setId(final String id) {
+            this.id = id;
+        }
+
+        public void setSource(final String source) {
+            this.source = source;
+        }
+
+        public void setSpecversion(final String specversion) {
+            this.specversion = specversion;
+        }
+
+        public void setType(final String type) {
+            this.type = type;
+        }
+
+        public void setTime(final String time) {
+            this.time = time;
+        }
+
+        public void setData(final Object data) {
+            this.data = data;
+        }
+
+        public void setTraceid(final String traceid) {
+            this.traceid = traceid;
+        }
+
+        public void setGroup(final String group) {
+            this.group = group;
+        }
+
+        public static CloudEventRequestDto map(EventDto event) {
+            CloudEventRequestDto cloudEvent = new CloudEventRequestDto();
+            cloudEvent.setId(event.getId());
+            cloudEvent.setSource(event.getSource());
+            cloudEvent.setSpecversion("1.0");
+            cloudEvent.setType(event.getEventName());
+            cloudEvent.setTime(convert(event.getTimestamp()));
+            cloudEvent.setData(event.getData());
+            cloudEvent.setTraceid(event.getTraceId());
+            cloudEvent.setGroup(event.getGroup());
+            return cloudEvent;
+        }
+        public static String convert(long epochTimestamp) {
+            Date date = new Date(epochTimestamp);
+            SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX");
+            formatter.setTimeZone(TimeZone.getTimeZone("UTC"));
+            return formatter.format(date);
+        }
     }
 }
