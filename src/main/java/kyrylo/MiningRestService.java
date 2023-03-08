@@ -7,7 +7,6 @@ import au.edu.qut.processmining.miners.splitminer.ui.dfgp.DFGPUIResult;
 import au.edu.qut.processmining.miners.splitminer.ui.miner.SplitMinerUIResult;
 import com.raffaeleconforti.log.util.LogImporter;
 import org.deckfour.xes.classification.XEventNameClassifier;
-import org.deckfour.xes.factory.XFactoryNaiveImpl;
 import org.deckfour.xes.model.XAttributeLiteral;
 import org.deckfour.xes.model.XElement;
 import org.deckfour.xes.model.XLog;

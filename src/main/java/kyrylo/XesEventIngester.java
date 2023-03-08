@@ -4,7 +4,6 @@ import com.raffaeleconforti.log.util.LogImporter;
 import kong.unirest.HttpResponse;
 import kong.unirest.JsonNode;
 import kong.unirest.Unirest;
-import org.camunda.discovery.EventDto;
 import org.deckfour.xes.model.XAttributeLiteral;
 import org.deckfour.xes.model.XAttributeTimestamp;
 import org.deckfour.xes.model.XEvent;
@@ -13,8 +12,6 @@ import org.deckfour.xes.model.XTrace;
 import org.xeslite.lite.factory.XFactoryLiteImpl;
 
 import java.text.SimpleDateFormat;
-import java.time.Instant;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
@@ -22,7 +19,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.TimeZone;
 import java.util.UUID;
-import java.util.stream.Collectors;
 
 public class XesEventIngester {
     public static void ingestLog(String path) throws Exception {
@@ -39,7 +35,7 @@ public class XesEventIngester {
             String traceId = ((XAttributeLiteral) trace.getAttributes().get("concept:name")).getValue();
             traces.put(traceId, trace);
         });
-        List<org.camunda.discovery.EventDto> events = new ArrayList<>();
+        List<EventDto> events = new ArrayList<>();
         traces.forEach((key, value) -> value.forEach(e -> {
 //            if (Objects.equals(getLifecycleAttribute(e), "complete")) {
                 events.add(xEventToEventDto(e, key, logName));
@@ -48,8 +44,8 @@ public class XesEventIngester {
         ingestEventsInChunks(events);
     }
 
-    public static org.camunda.discovery.EventDto xEventToEventDto(XEvent event, String traceId, String logName) {
-        org.camunda.discovery.EventDto eventDto = new org.camunda.discovery.EventDto();
+    public static EventDto xEventToEventDto(XEvent event, String traceId, String logName) {
+        EventDto eventDto = new EventDto();
         eventDto.setEventName(getStringAttributeValue(event, "concept:name") + getLifecycleAttribute(event));
         eventDto.setTimestamp(((XAttributeTimestamp)event.getAttributes().get("time:timestamp")).getValueMillis());
         eventDto.setSource(logName);
@@ -83,7 +79,7 @@ public class XesEventIngester {
         HttpResponse<JsonNode> response = Unirest.post("http://localhost:8090/api/ingestion/event/batch/mapped")
                 .header("accept", "application/json")
                 .header("Content-Type", "application/json")
-                .header("Authorization", "Bearer SASAT")
+                .header("Authorization", "Bearer VERY_SECURE_TOKEN")
                 .body(events).asJson();
         System.out.println(response.getStatus());
     }
